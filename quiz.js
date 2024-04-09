@@ -1,6 +1,6 @@
 document.getElementById('quizForm').addEventListener('submit', function(event) {
     event.preventDefault(); 
-    
+
     // Captura das respostas
     const q1 = document.getElementById('q1').value.trim();
     const q2 = document.querySelector('input[name="q2"]:checked');
@@ -33,7 +33,7 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
     }
 
     // Verifica a resposta da pergunta 4
-    if (q4 === 'júpiter') {
+    if (q4.toLowerCase() === 'júpiter') {
         score++;
     }
 
