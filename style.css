@@ -106,5 +106,6 @@ button:hover {
     input[type="text"],
     input[type="number"] {
         width: calc(100% - 22px); /* Ajusta a largura dos inputs */
+        margin-top: 5px
     }
 }
