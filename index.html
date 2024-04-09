@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz StackX</h1>
+        <form id="quizForm">
+            <div>                
+                <label class="ask" for="q1">1- Qual é a capital do Brasil?</label>
+                <input type="text" id="q1" required>
+            </div>
+            <div>                
+                <p class="ask">2- Qual é a cor do céu em um dia claro?</p>
+                <input type="radio" id="blue" name="q2" value="azul" required>
+                <label for="blue">Azul</label><br>
+                <input type="radio" id="red" name="q2" value="vermelho">
+                <label for="red">Vermelho</label><br>
+                <input type="radio" id="green" name="q2" value="verde">
+                <label for="green">Verde</label>
+            </div>
+            <div>                
+                <label class="ask" for="q3">3- Quanto é 5 + 2?</label>
+                <input type="number" id="q3" required>
+            </div>
+            <div>               
+                <label class="ask" for="q4">4- Qual é o maior planeta do Sistema Solar?</label>
+                <input type="text" id="q4" required>
+            </div>
+            <div>               
+                <label class="ask" for="q5">5- Qual é a capital do Japão?</label>
+                <input type="text" id="q5" required>
+            </div>
+            <button type="submit">Enviar</button>
+            <button type="button" id="retryButton">Tente Novamente</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
+
