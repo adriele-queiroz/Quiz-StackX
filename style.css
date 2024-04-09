@@ -93,3 +93,18 @@ button:hover {
     font-weight: bold;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    form {
+        padding: 20px; /* Reduz o preenchimento do formulário */
+    }
+
+    .ask {
+        font-size: 1.2rem; /* Reduz o tamanho da fonte das perguntas */
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: calc(100% - 22px); /* Ajusta a largura dos inputs */
+    }
+}
